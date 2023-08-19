@@ -1,7 +1,7 @@
 const mongoose=require("mongoose");
 
 const modelSchema= new mongoose.Schema({
-    qustionNo: Number,        
+      
     
     questions: String,
 

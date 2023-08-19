@@ -11,11 +11,16 @@
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const data = {
-        question: question,
-        options: [option1, option2, option3, option4],
+        const Bdata = {
+          questions: question,
+          allOptions: [
+            { Options: option1 },
+            { Options: option2 },
+            { Options: option3 },
+            { Options: option4 },
+          ],
         };
-        addData(data, setData);
+        addData({Bdata}, setData);
     };
 
     return (

@@ -9,8 +9,8 @@ function App() {
 
   return (
     <>
-        <Navbar />
       <BrowserRouter>
+        <Navbar />
       <Routes>
        <Route path='/' element ={<Home data={data} />} />
        <Route path='/add' element ={<Add setData={setData} />} />

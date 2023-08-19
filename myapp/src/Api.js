@@ -30,14 +30,15 @@ const updataData = ({ setData }) => {
     })
     .catch((err) => console.log(err));
 };
-const addData = ({ data, setData }) => {
+const addData = ({ Bdata, setData }) => {
   axios
-    .post(`${baseURL}/add`, data)
-    .then((data) => {
-      console.log(data);
+    .post(`${baseURL}/add`, {Bdata})
+    .then((res) => {
+      console.log(res);
+      console.log({Bdata});
       getData(setData);
     })
     .catch((err) => console.log(err));
 };
-
+  
 export { addData, updataData, deleteData, getData };

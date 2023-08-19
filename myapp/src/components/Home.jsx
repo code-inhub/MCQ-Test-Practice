@@ -1,9 +1,19 @@
 import React from 'react'
 
-function Home() {
+function Home({data}) {
+
   return (
     <div>
-  this is home
+     {data.map((item)=>(
+ 
+          <div key={item._id}>
+            <h1>{item.questions}</h1>
+            {/* <h2>{item.ans}</h2> */}
+          </div>
+        )
+      
+     )}
+
     </div>
   )
 }
